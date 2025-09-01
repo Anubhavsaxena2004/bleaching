@@ -1,5 +1,5 @@
 # auth.py
-import jwt
+import jwt,os
 from jwt import PyJWTError
 from datetime import datetime, timedelta, timezone
 from passlib.context import CryptContext
