@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  bleaching:
+    build: .
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+    restart: unless-stopped
+    # If you prefer a non-root container user, further steps can be added.
