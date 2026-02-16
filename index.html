@@ -100,9 +100,9 @@
 <body class="min-h-screen text-slate-800">
 
     <!-- Debug message -->
-    <div id="debug-message" class="fixed top-0 left-0 right-0 bg-red-100 text-red-800 p-2 text-center z-50">
+    <!-- <div id="debug-message" class="fixed top-0 left-0 right-0 bg-red-100 text-red-800 p-2 text-center z-50">
         Debug: Page loaded successfully. If you don't see content, check console for errors.
-    </div>
+    </div> -->
 
     <div id="app-section" class="smooth-transition section-visible">
         <header class="bg-white/80 shadow-sm border-b backdrop-blur-lg sticky top-0 z-10">
@@ -114,13 +114,28 @@
                         </svg>
                         <h1 class="text-2xl font-bold text-slate-800">Marine Ecosystem Health Predictor</h1>
                     </div>
+                    <nav class="hidden md:flex space-x-8">
+                        <a href="index.html" class="text-slate-700 hover:text-cyan-600 font-medium transition duration-300">Home</a>
+                        <a href="about.html" class="text-slate-700 hover:text-cyan-600 font-medium transition duration-300">About</a>
+                        <a href="features.html" class="text-slate-700 hover:text-cyan-600 font-medium transition duration-300">Features</a>
+                        <a href="contact.html" class="text-slate-700 hover:text-cyan-600 font-medium transition duration-300">Contact</a>
+                    </nav>
                     <div class="flex items-center space-x-4">
                         <span id="user-info" class="text-slate-600 hidden sm:block">Guest User</span>
-                        <button id="logout-btn" 
+                        <button id="logout-btn"
                                 class="bg-slate-200 text-slate-700 px-4 py-2 rounded-lg hover:bg-slate-300 transition duration-300 font-semibold text-sm">
                             Logout
                         </button>
                     </div>
+                </div>
+                <!-- Mobile Navigation -->
+                <div class="md:hidden border-t border-slate-200 pt-4">
+                    <nav class="flex justify-center space-x-6">
+                        <a href="index.html" class="text-slate-700 hover:text-cyan-600 font-medium transition duration-300 text-sm">Home</a>
+                        <a href="about.html" class="text-slate-700 hover:text-cyan-600 font-medium transition duration-300 text-sm">About</a>
+                        <a href="features.html" class="text-slate-700 hover:text-cyan-600 font-medium transition duration-300 text-sm">Features</a>
+                        <a href="contact.html" class="text-slate-700 hover:text-cyan-600 font-medium transition duration-300 text-sm">Contact</a>
+                    </nav>
                 </div>
             </div>
         </header>
